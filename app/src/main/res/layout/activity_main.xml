@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHeading">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewNews"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autoLink="all"
+                android:layout_margin="5dp"
+                android:text="Even as the novel coronavirus cases continue to rise at an unprecedented rate across the globe, a COVID-19 vaccine candidate developed by Russia's Sechenov University is grabbing headlines, as Russian scientists tout it to be one of the world’s first coronavirus vaccine. The researchers claimed that Russia might be one of the first countries in the world to develop a coronavirus vaccine as it has completed the tests on volunteers.The clinical trials were started in mid-June and the first group of 18 volunteers and the second group of 23 volunteers were injected with the first dosage of the vaccine candidate at the Gamalei Institute of Epidemiology and Microbiology. All the volunteers, who were between the age of 18 to 65, had spent 28 days in isolation, in order to prevent them from contracting other infections. They will be monitored for 6 months after their discharge as well.According to Elena Smolyarchuk who is the head and chief researcher at Sechenov University, some of the volunteers of the study had developed minor side-effects of the vaccine candidate including headache and fever. However, the symptoms subsided within 24 hours.It should be noted that the first group of volunteers are all set to be discharged on Wednesday and the next lot on July 20. According to Alexander Lukashev, the director of the Institute of Medical Parasitology, Tropical and Vector-Borne Diseases at Sechenov University, “The safety of the vaccine is confirmed. It corresponds to the safety of those vaccines that are currently on the market.” The Russian vaccine candidate had also garnered eyeballs with the statement that the researchers of the Gamaleya institute including the director, had dosed themselves with vaccine first before beginning the clinical trials.According to a report, the Russian scientists are hopeful to launch the world’s first coronavirus vaccine by mid-August as Alexander, who is the director of Gamalei center, is hopeful that the vaccine candidate will ‘enter civil circulation’ by August 12-14. He further added that mass production of the same by the drugmakers may begin by September 2020.t is important to understand that the World Health Organization still lists the Russian vaccine candidate in phase 1 of clinical trials and for any vaccine to get approved for large-scale production, it needs to undergo three phases of human trials (after pre-clinical trials)." />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textViewHeading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        android:text="Russian scientists planning to launch Coronavirus vaccine by mid-August"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
